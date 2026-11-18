@@ -6,32 +6,42 @@
 
 Ejemplo en C# para probar cómo una aplicación web envía correo por SMTP. Sirve para comparar texto, HTML, archivos adjuntos e invitaciones de calendario en un entorno de pruebas.
 
-### Esta revisión
+### Qué puedes hacer
 
-**2024-11-25 · Probar envíos de correo SMTP desde C#.** Añade un servicio de ejemplo con rutas para enviar texto, HTML, adjuntos y citas de calendario. Usa una aplicación pequeña para poder comparar el resultado de cada tipo de mensaje en un entorno de pruebas.
+- Conserva rutas para enviar mensajes en texto, HTML o ambas formas.
+- Incluye ejemplos de adjuntos y encabezados personalizados.
+- Muestra cómo enviar una invitación de calendario.
 
-### Cómo explorar el código
+### Ejemplo
+
+Usa un servidor SMTP de pruebas que capture los mensajes y una dirección ficticia. Compara la salida de texto y la versión HTML en el capturador de correo.
+
+### Cómo empezar
 
 Consulta `TargetFramework` en los archivos `.csproj` para elegir la versión de .NET. Configura los servicios en local con credenciales de prueba. La ejecución de los flujos que dependen de integraciones necesita sus componentes y recursos de la época.
 
-- [SendEmail.sln](SendEmail.sln)
-- [SendEmail/Program.cs](SendEmail/Program.cs)
-- [SendEmail/SendEmail.csproj](SendEmail/SendEmail.csproj)
+Puntos de entrada en el código. [`SendEmail.sln`](SendEmail.sln), [`SendEmail/Program.cs`](SendEmail/Program.cs), [`SendEmail/SendEmail.csproj`](SendEmail/SendEmail.csproj).
+
+[Licencia MIT](LICENSE).
 
 ## English
 
 A C# example for testing how a web application sends mail over SMTP. It compares plain text, HTML, attachments, and calendar invitations in a controlled test setup.
 
-### This revision
+### What you can do
 
-**2024-11-25 · Demonstrate SMTP mail from C#.** Add a sample service with endpoints for text, HTML, attachments, and calendar events. A small application lets readers compare the output of the different message types in a test environment.
+- Includes endpoints for plain text, HTML, or both formats.
+- Includes attachment and custom header examples.
+- Shows how to send a calendar invitation.
 
-### How to explore the source
+### Example
+
+Use a test SMTP server that captures messages and a fictional address. Compare plain text and HTML output in the mail catcher.
+
+### Getting started
 
 Check `TargetFramework` in the `.csproj` files to select the .NET version. Configure services locally using test credentials. Workflows that depend on integrations require their historical components and resources.
 
-- [SendEmail.sln](SendEmail.sln)
-- [SendEmail/Program.cs](SendEmail/Program.cs)
-- [SendEmail/SendEmail.csproj](SendEmail/SendEmail.csproj)
+Entry points in the source. [`SendEmail.sln`](SendEmail.sln), [`SendEmail/Program.cs`](SendEmail/Program.cs), [`SendEmail/SendEmail.csproj`](SendEmail/SendEmail.csproj).
 
-[Licencia / License](LICENSE)
+[MIT license](LICENSE).
